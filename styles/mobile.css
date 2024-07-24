@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* - Linear Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%) */
 :root {
     --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
     --Light-Grayish-Blue: hsl(234, 14%, 74%);
     --Grayish-Blue: hsl(233, 13%, 49%);
     --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--Very-Light-Grayish-Blue);
 }
