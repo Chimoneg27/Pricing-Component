@@ -11,6 +11,8 @@
     --Light-Grayish-Blue: hsl(234, 14%, 74%);
     --Grayish-Blue: hsl(233, 13%, 49%);
     --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+    --Pale-Blue: #a3a8f0;
+    --Dark-Blue: #696fdd;
 }
 
 body {
@@ -89,4 +91,16 @@ body {
     border-top: 1px solid var(--Light-Grayish-Blue);  
     width: 85%;
     text-align: center;
+}
+
+.cards button {
+    width: 85%;
+    padding: 1rem;
+    border: none;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    background: linear-gradient(51deg, rgba(163,168,240,1) 2%, rgba(105,111,221,1) 30%);
+    border-radius: 8px;
 }
