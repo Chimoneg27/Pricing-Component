@@ -95,6 +95,7 @@ body {
     color: var(--Grayish-Blue);
     font-weight: bold;
     border-top: 1px solid var(--Light-Grayish-Blue);  
+    border-bottom: 1px solid var(--Light-Grayish-Blue);
     width: 85%;
     text-align: center;
 }
@@ -121,6 +122,8 @@ body {
 
 #pro li{
     color: white;
+    border-top: 1px solid white;  
+    border-bottom: 1px solid white;
 }
 
 #pro button{
@@ -130,4 +133,59 @@ body {
 
 #pro {
     background: linear-gradient(95deg, rgba(163,168,240,1) 6%, rgba(105,111,221,1) 36%);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--Dark-Blue);
+    --webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    --webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: var(--Dark-Blue);
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
