@@ -1,5 +1,22 @@
 @media only screen and (min-width: 1024px) {
-    body {
-        background-color: black;
+    .container {
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .cards {
+        width: 365px;
+        height: 28rem;
+    }
+
+    .card-container {
+        display: flex;
+        align-items: center;
+
+    }
+
+    #pro {
+        width: 350px;
+        height: 32rem;
     }
 }
