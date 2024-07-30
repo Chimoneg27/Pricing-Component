@@ -13,11 +13,22 @@
     .card-container {
         display: flex;
         align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .cards:last-child {
+        margin-left: -2.65rem;
+    }
+
+    .cards:first-child {
+        margin-right: -2.65rem;
     }
 
     #pro {
         width: 350px;
         height: 32rem;
+        z-index: 2;
     }
 
     .billing {
