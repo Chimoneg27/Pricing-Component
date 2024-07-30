@@ -2,6 +2,7 @@
     .container {
         width: 100%;
         margin-bottom: 4rem;
+        margin-top: 0;
     }
 
     .cards {
@@ -18,5 +19,11 @@
     #pro {
         width: 350px;
         height: 32rem;
+    }
+
+    .billing {
+        width: 400px;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
